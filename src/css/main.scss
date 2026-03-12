@@ -1,0 +1,425 @@
+// ── Variables ──────────────────────────────────────────────────────────────────
+
+$color-bg: #f6f6f6;
+$color-text: #3e3e3e;
+$color-link: #0085bd;
+$color-link-hover: #60a5dd;
+$color-border: #d8d8d8;
+$color-muted: #888;
+$color-white: #fff;
+
+$font-serif:
+  var(--font-garamond, "Cormorant Garamond"), Georgia, "Times New Roman", serif;
+$font-sc: var(--font-sc, "Cormorant SC"), "Cormorant Garamond", Georgia, serif;
+
+$body-size: 14px;
+$line-height: 1.65;
+$content-width: 900px;
+
+// ── Reset / Base ───────────────────────────────────────────────────────────────
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: $body-size;
+}
+
+body {
+  background: $color-bg;
+  color: $color-text;
+  font-family: $font-serif;
+  font-size: 1rem;
+  line-height: $line-height;
+  margin: 0;
+}
+
+a {
+  color: $color-link;
+  text-decoration: none;
+  &:hover {
+    color: $color-link-hover;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+p {
+  margin: 0 0 1rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 0 0.5rem;
+  font-weight: 400;
+}
+
+h1 {
+  font-family: $font-sc;
+  font-size: 2rem;
+  letter-spacing: 0.03em;
+}
+h2 {
+  font-family: $font-sc;
+  font-size: 1.5rem;
+  letter-spacing: 0.02em;
+}
+h3 {
+  font-family: $font-serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+h4 {
+  font-family: $font-serif;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+ul,
+ol {
+  margin: 0 0 1rem;
+  padding-left: 1.5rem;
+}
+
+blockquote {
+  margin: 1.25rem 0;
+  padding: 0.5rem 1.5rem;
+  border-left: 3px solid $color-border;
+  font-style: italic;
+  color: $color-muted;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid $color-border;
+  margin: 2rem 0;
+}
+
+// ── Page wrapper ──────────────────────────────────────────────────────────────
+
+.page-wrapper {
+  max-width: $content-width;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+// ── Site header ───────────────────────────────────────────────────────────────
+
+.site-header {
+  text-align: center;
+  padding: 3rem 2rem 0;
+  background: $color-bg;
+}
+
+.site-header__logo {
+  max-width: 420px;
+  margin: 0 auto 1.25rem;
+
+  img {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+}
+
+.site-header__title {
+  font-family: $font-sc;
+  font-size: 1.6rem;
+  font-weight: 400;
+  letter-spacing: 0.06em;
+  margin: 0 0 0.6rem;
+}
+
+.site-header__tagline {
+  font-family: $font-serif;
+  font-style: italic;
+  font-size: 0.85rem;
+  color: $color-muted;
+  max-width: 580px;
+  margin: 0 auto 2.5rem;
+  line-height: 1.55;
+}
+
+// ── Main navigation ───────────────────────────────────────────────────────────
+
+.main-nav {
+  border-top: 1px solid $color-border;
+  border-bottom: 1px solid $color-border;
+}
+
+.main-nav__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.main-nav__item {
+  position: relative;
+
+  // Show dropdown on hover
+  &:hover > .main-nav__dropdown {
+    display: block;
+  }
+}
+
+.main-nav__link {
+  display: block;
+  padding: 0.6rem 0.9rem;
+  font-family: $font-sc;
+  font-size: 0.78rem;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  color: $color-text;
+
+  &:hover {
+    color: $color-link;
+  }
+}
+
+.main-nav__dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: $color-white;
+  border: 1px solid $color-border;
+  min-width: 170px;
+  z-index: 100;
+  list-style: none;
+  margin: 0;
+  padding: 0.25rem 0;
+
+  li a {
+    display: block;
+    padding: 0.35rem 1rem;
+    font-family: $font-sc;
+    font-size: 0.75rem;
+    letter-spacing: 0.06em;
+    color: $color-text;
+    white-space: nowrap;
+
+    &:hover {
+      color: $color-link;
+      background: $color-bg;
+    }
+  }
+}
+
+// ── Section sub-nav ───────────────────────────────────────────────────────────
+
+.section-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0;
+  border-bottom: 1px solid $color-border;
+  margin-bottom: 2rem;
+
+  a {
+    display: block;
+    padding: 0.45rem 1rem;
+    font-family: $font-sc;
+    font-size: 0.78rem;
+    letter-spacing: 0.08em;
+    color: $color-muted;
+
+    &:hover,
+    &.active {
+      color: $color-link;
+    }
+  }
+}
+
+// ── Page content area ─────────────────────────────────────────────────────────
+
+.page-content {
+  padding: 2.5rem 0;
+}
+
+.page-content__title {
+  margin-bottom: 0.35rem;
+}
+
+.page-content__meta {
+  font-size: 0.8rem;
+  color: $color-muted;
+  margin-bottom: 2.5rem;
+}
+
+.page-content__back {
+  display: inline-block;
+  margin-bottom: 1.25rem;
+  font-size: 0.8rem;
+  color: $color-muted;
+
+  &:hover {
+    color: $color-link;
+  }
+}
+
+// ── Article body (rendered markdown HTML) ─────────────────────────────────────
+
+.slideshow {
+  position: relative;
+  margin: 1.5rem 0;
+  background: #000;
+
+  &__track {
+    line-height: 0;
+  }
+
+  &__slide {
+    display: none;
+    margin: 0;
+
+    &.is-active {
+      display: block;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+  }
+
+  &__btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.45);
+    color: $color-white;
+    border: none;
+    font-size: 2.5rem;
+    line-height: 1;
+    padding: 0.25rem 0.6rem;
+    cursor: pointer;
+
+    &:hover {
+      background: rgba(0, 0, 0, 0.75);
+    }
+
+    &--prev { left: 0; }
+    &--next { right: 0; }
+  }
+}
+
+.video-embed {
+  position: relative;
+  padding-top: 56.25%; // 16:9
+  margin: 1.5rem 0;
+
+  iframe {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+}
+
+.article-body {
+  img {
+    max-width: 100%;
+    height: auto;
+    margin: 1.5rem 0;
+  }
+
+  p {
+    margin: 0 0 1rem;
+  }
+
+  h2,
+  h3,
+  h4 {
+    margin: 1.75rem 0 0.5rem;
+  }
+
+  ul,
+  ol {
+    margin: 0 0 1rem;
+    padding-left: 1.5rem;
+  }
+
+  blockquote {
+    margin: 1.25rem 0;
+    padding: 0.5rem 1.5rem;
+    border-left: 3px solid $color-border;
+    font-style: italic;
+    color: $color-muted;
+  }
+
+  hr {
+    border: none;
+    border-top: 1px solid $color-border;
+    margin: 2rem 0;
+  }
+
+  a {
+    color: $color-link;
+    &:hover {
+      color: $color-link-hover;
+    }
+  }
+
+  // Gallery: consecutive images float nicely side by side
+  figure {
+    margin: 1.5rem 0;
+  }
+}
+
+// ── Post list ─────────────────────────────────────────────────────────────────
+
+.post-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  li {
+    border-bottom: 1px solid $color-border;
+    padding: 1.5rem 0;
+
+    &:first-child {
+      padding-top: 0;
+    }
+  }
+}
+
+.post-list__title {
+  font-family: $font-sc;
+  font-size: 1.1rem;
+  letter-spacing: 0.02em;
+
+  a {
+    color: $color-text;
+    &:hover {
+      color: $color-link;
+    }
+  }
+}
+
+.post-list__meta {
+  font-size: 0.8rem;
+  color: $color-muted;
+  margin: 0.2rem 0 0;
+}
+
+.post-list__excerpt {
+  font-size: 0.9rem;
+  color: $color-text;
+  margin: 0.4rem 0 0;
+}
