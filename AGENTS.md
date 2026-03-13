@@ -12,60 +12,58 @@ See [EXPORT_XML_STRUCTURE.md](EXPORT_XML_STRUCTURE.md) for a detailed descriptio
 .
 ├── content/
 │   ├── posts/
-│   │   ├── nyheter/          # Main news posts  (33 files)
-│   │   ├── historierogmyter/ # Stories & myths  ( 6 files)
-│   │   └── den-hviide-knap/  # DHK-specific news ( 9 files)
+│   │   ├── nyheter/          # Main news posts  (34 files)
+│   │   ├── historierogmyter/ # Stories & myths  ( 7 files)
+│   │   └── den-hviide-knap/  # DHK-specific news (10 files)
 │   ├── pages/
 │   │   ├── den-gyldne-gris-orden/  # DGG section (7 files, index.md = anno 1859)
 │   │   ├── den-hviide-knap/        # DHK section (5 files)
 │   │   ├── bokuglen/               # Bokuglen section (5 files, index.md = anno 1924)
 │   │   ├── grisefestene/           # Festival pages (4 files, index.md)
-│   │   ├── _squarespace/           # Squarespace template pages – not for rendering
-│   │   ├── about.md
-│   │   ├── chateau-neuf.md
-│   │   └── contact.md
+│   │   └── _squarespace/           # Squarespace template pages – not for rendering
 │   └── image-manifest.json   # CDN URL → local path mapping for all 394 images
 ├── public/
-│   └── images/         # Downloaded images
+│   ├── images/         # Downloaded images (not committed)
+│   └── files/          # Document files, e.g. PDFs (not committed)
 ├── scripts/
-│   ├── convert-xml.mjs       # Step 1: XML → Markdown
+│   ├── convert-xml.mjs        # Step 1: XML → Markdown
 │   ├── reorganize-content.mjs # Step 2: sort into section subdirectories (run once)
-│   └── download-images.mjs   # Step 3: fetch images from CDN
+│   └── download-images.mjs    # Step 3: fetch images from CDN
 ├── src/                # Next.js app source
 └── export-2026-03-09.xml  # Original Squarespace XML export
 ```
 
 ## Site navigation (from hmgrisen.com)
 
-The live site's top-level navigation, which determines the section structure above:
+The old site's top-level navigation, which determines the section structure above:
 
-| Menu item | URL(s) | Content type |
-|-----------|--------|-------------|
-| Nyheter | `/` | Posts in `posts/nyheter/` |
-| Historier og myter | `/historierogmyter` | Posts in `posts/historierogmyter/` |
-| Om | `/about` | Static page |
-| **Den Gyldne Gris' Orden** | `/den-gyldne-gris-orden` | Section index + sub-pages |
-| ↳ Anno 1859 | `/den-gyldne-gris-orden` | `pages/den-gyldne-gris-orden/index.md` |
-| ↳ Presensliste | `/presensliste` | `pages/den-gyldne-gris-orden/presensliste.md` |
-| ↳ Statutter | `/statutter` | `pages/den-gyldne-gris-orden/statutter.md` |
-| ↳ Embedsverk | `/hoff` | `pages/den-gyldne-gris-orden/hoff.md` |
-| ↳ Matrikkel | `/matrikkel` | `pages/den-gyldne-gris-orden/matrikkel.md` |
-| **Den Hviide Knap** | `/anno-1899` | Posts + static sub-pages |
-| ↳ Knappenytt (news) | `/anno-1899` | Posts in `posts/den-hviide-knap/` |
-| ↳ Historie | `/dhkhistorie` | `pages/den-hviide-knap/dhkhistorie.md` |
-| ↳ Presensliste | `/dhkpresensliste` | `pages/den-hviide-knap/dhkpresensliste.md` |
-| ↳ Matrikkel | `/dhkmatrikkel` | `pages/den-hviide-knap/dhkmatrikkel.md` |
-| ↳ Statutter | `/dhkstatutter` | `pages/den-hviide-knap/dhkstatutter.md` |
-| ↳ Studentteateret 175 år | `/studentteateret-175-r` | `pages/den-hviide-knap/studentteateret-175-r.md` |
-| **Bokuglen** | `/anno-1924` | Section index + sub-pages |
-| ↳ Anno 1924 | `/anno-1924` | `pages/bokuglen/index.md` |
-| ↳ Bokuglens historie | `/bokuglens-historie` | `pages/bokuglen/bokuglens-historie.md` |
-| ↳ Presensliste | `/bupresensliste` | `pages/bokuglen/bupresensliste.md` |
-| ↳ Matrikkel | `/bumatrikkel` | `pages/bokuglen/bumatrikkel.md` |
-| ↳ Statutter | `/bustatutter` | `pages/bokuglen/bustatutter.md` |
-| **Grisefestene** | `/grisefestene` | Section index + per-festival pages |
-| Chateau Neuf | `/chateau-neuf` | Static page |
-| Det Norske Studentersamfund | `studentersamfundet.no` | External link |
+| Menu item                   | URL(s)                   | Content type                                     |
+| --------------------------- | ------------------------ | ------------------------------------------------ |
+| Nyheter                     | `/`                      | Posts in `posts/nyheter/`                        |
+| Historier og myter          | `/historierogmyter`      | Posts in `posts/historierogmyter/`               |
+| Om                          | `/about`                 | Static page                                      |
+| **Den Gyldne Gris' Orden**  | `/den-gyldne-gris-orden` | Section index + sub-pages                        |
+| ↳ Anno 1859                 | `/den-gyldne-gris-orden` | `pages/den-gyldne-gris-orden/index.md`           |
+| ↳ Presensliste              | `/presensliste`          | `pages/den-gyldne-gris-orden/presensliste.md`    |
+| ↳ Statutter                 | `/statutter`             | `pages/den-gyldne-gris-orden/statutter.md`       |
+| ↳ Embedsverk                | `/hoff`                  | `pages/den-gyldne-gris-orden/hoff.md`            |
+| ↳ Matrikkel                 | `/matrikkel`             | `pages/den-gyldne-gris-orden/matrikkel.md`       |
+| **Den Hviide Knap**         | `/anno-1899`             | Posts + static sub-pages                         |
+| ↳ Knappenytt (news)         | `/anno-1899`             | Posts in `posts/den-hviide-knap/`                |
+| ↳ Historie                  | `/dhkhistorie`           | `pages/den-hviide-knap/dhkhistorie.md`           |
+| ↳ Presensliste              | `/dhkpresensliste`       | `pages/den-hviide-knap/dhkpresensliste.md`       |
+| ↳ Matrikkel                 | `/dhkmatrikkel`          | `pages/den-hviide-knap/dhkmatrikkel.md`          |
+| ↳ Statutter                 | `/dhkstatutter`          | `pages/den-hviide-knap/dhkstatutter.md`          |
+| ↳ Studentteateret 175 år    | `/studentteateret-175-r` | `pages/den-hviide-knap/studentteateret-175-r.md` |
+| **Bokuglen**                | `/anno-1924`             | Section index + sub-pages                        |
+| ↳ Anno 1924                 | `/anno-1924`             | `pages/bokuglen/index.md`                        |
+| ↳ Bokuglens historie        | `/bokuglens-historie`    | `pages/bokuglen/bokuglens-historie.md`           |
+| ↳ Presensliste              | `/bupresensliste`        | `pages/bokuglen/bupresensliste.md`               |
+| ↳ Matrikkel                 | `/bumatrikkel`           | `pages/bokuglen/bumatrikkel.md`                  |
+| ↳ Statutter                 | `/bustatutter`           | `pages/bokuglen/bustatutter.md`                  |
+| **Grisefestene**            | `/grisefestene`          | Section index + per-festival pages               |
+| Chateau Neuf                | `/chateau-neuf`          | Static page                                      |
+| Det Norske Studentersamfund | `studentersamfundet.no`  | External link                                    |
 
 ---
 
@@ -74,6 +72,7 @@ The live site's top-level navigation, which determines the section structure abo
 > **Note:** Steps 1–3 are one-time setup scripts, not part of the build pipeline.
 
 **Run:**
+
 ```bash
 node scripts/convert-xml.mjs                    # convert only
 node scripts/convert-xml.mjs --download-images  # convert + fetch all images
@@ -94,16 +93,16 @@ node scripts/convert-xml.mjs --download-images  # convert + fetch all images
 
 ### Frontmatter fields
 
-| Field | Source | Notes |
-|-------|--------|-------|
-| `title` | `<title>` | |
-| `date` | `<wp:post_date>` | ISO date, truncated to `YYYY-MM-DD` |
-| `author` | `<dc:creator>` → author map | Display name resolved from email |
-| `status` | `<wp:status>` | `publish` or `draft` |
-| `type` | `<wp:post_type>` | `post` or `page` |
-| `oldPermalink` | `<link>` | **Original relative URL** — used for redirect rules |
-| `postName` | `<wp:post_name>` | Original WP slug (may include path) |
-| `excerpt` | `<excerpt:encoded>` | Only present when non-empty |
+| Field          | Source                      | Notes                                               |
+| -------------- | --------------------------- | --------------------------------------------------- |
+| `title`        | `<title>`                   |                                                     |
+| `date`         | `<wp:post_date>`            | ISO date, truncated to `YYYY-MM-DD`                 |
+| `author`       | `<dc:creator>` → author map | Display name resolved from email                    |
+| `status`       | `<wp:status>`               | `publish` or `draft`                                |
+| `type`         | `<wp:post_type>`            | `post` or `page`                                    |
+| `oldPermalink` | `<link>`                    | **Original relative URL** — used for redirect rules |
+| `postName`     | `<wp:post_name>`            | Original WP slug (may include path)                 |
+| `excerpt`      | `<excerpt:encoded>`         | Only present when non-empty                         |
 
 ### Output filename conventions
 
@@ -116,7 +115,7 @@ The last path segment of `<wp:post_name>` is used as the slug.
 
 - All `<img src="...">` URLs in content are collected and deduplicated (by URL without query string).
 - Each gets a local filename derived from the last path segment of the CDN URL.
-- The HTML is rewritten with local paths *before* HTML→Markdown conversion, so the Markdown references `/images/FILENAME`.
+- The HTML is rewritten with local paths _before_ HTML→Markdown conversion, so the Markdown references `/images/FILENAME`.
 - `content/image-manifest.json` maps CDN URL → `{ localPath, filename, downloadUrl }`.
 - Actual file downloads happen only with `--download-images` (supports one redirect hop).
 
@@ -142,12 +141,12 @@ The `oldPermalink` frontmatter field contains the original Squarespace URL path 
 
 ### Tech stack
 
-| Layer | Choice |
-|-------|--------|
-| Framework | Next.js 16 App Router, static export (SSG) |
+| Layer            | Choice                                                 |
+| ---------------- | ------------------------------------------------------ |
+| Framework        | Next.js 16 App Router, static export (SSG)             |
 | Markdown parsing | `gray-matter` (frontmatter) + `remark` + `remark-html` |
-| Styling | SASS — `src/css/main.scss` (no Tailwind) |
-| Fonts | `next/font/google` — Cormorant Garamond + Cormorant SC |
+| Styling          | SASS — `src/css/main.scss` (no Tailwind)               |
+| Fonts            | `next/font/google` — Cormorant Garamond + Cormorant SC |
 
 ### Source layout
 
@@ -155,53 +154,59 @@ The `oldPermalink` frontmatter field contains the original Squarespace URL path 
 src/
   app/                          # Next.js App Router routes
     layout.tsx                  # Root layout: header with logo + nav, imports main.scss
-    page.tsx                    # / → Nyheter index
-    nyheter/[slug]/page.tsx
+    page.tsx                    # / → Nyheter post index (full content, paginated)
+    nyheter/[slug]/page.tsx     # Single nyheter post
     historierogmyter/
-      page.tsx                  # section index
-      [slug]/page.tsx
+      page.tsx                  # Post index (full content, paginated)
+      [slug]/page.tsx           # Single post
     den-gyldne-gris-orden/
-      page.tsx                  # index.md
+      page.tsx                  # index.md (Anno 1859)
       [slug]/page.tsx           # presensliste, statutter, hoff, matrikkel, …
-    anno-1899/
-      page.tsx                  # DHK post list
-      [slug]/page.tsx           # DHK posts + static pages (dhkhistorie etc.)
-    anno-1924/
-      page.tsx                  # index.md (Bokuglen)
-      [slug]/page.tsx
+    den-hviide-knap/
+      page.tsx                  # Post index (Knappenytt, full content, paginated)
+      [slug]/page.tsx           # Static sub-pages: historie, presensliste, matrikkel, …
+      nyheter/[slug]/page.tsx   # Single DHK post
+    bokuglen/
+      page.tsx                  # index.md (Anno 1924)
+      [slug]/page.tsx           # historie, presensliste, matrikkel, statutter, …
     grisefestene/
       page.tsx                  # index.md
-      [slug]/page.tsx
+      [slug]/page.tsx           # 2004, 2009, 2013
     about/page.tsx
     chateau-neuf/page.tsx
   components/
     Nav.tsx                     # Site-wide nav with CSS hover dropdowns
     SectionNav.tsx              # Sub-section tab nav (takes links prop)
     PageLayout.tsx              # Wraps page: optional SectionNav + title + article body
+    PostListExpanded.tsx        # Client component: paginated full-content post list
+    SlideshowInit.tsx           # Client component: initialises image slideshows
   css/
     main.scss                   # All styles; variables at top
   lib/
-    content.ts                  # Shared FS helpers: getPostsBySection, getPostBySlug,
-                                # getSectionPage, getRootPage, getPostSlugs, getPageSlugs
+    content.ts                  # FS helpers: getPostsBySection, getFullPostsBySection,
+                                # getPostBySlug, getSectionPage, getPostSlugs, getPageSlugs
+    nav.ts                      # Centralised nav config: NAV, DGG_LINKS, DHK_LINKS, …
 ```
 
 ### URL → content mapping
 
-| URL | Source file |
-|-----|-------------|
-| `/` | `posts/nyheter/` index |
-| `/nyheter/:slug` | `posts/nyheter/YYYY-MM-DD-{slug}.md` |
-| `/historierogmyter/:slug` | `posts/historierogmyter/YYYY-MM-DD-{slug}.md` |
-| `/den-gyldne-gris-orden` | `pages/den-gyldne-gris-orden/index.md` |
-| `/den-gyldne-gris-orden/:slug` | `pages/den-gyldne-gris-orden/{slug}.md` |
-| `/anno-1899` | post list from `posts/den-hviide-knap/` |
-| `/anno-1899/:slug` | `posts/den-hviide-knap/` OR `pages/den-hviide-knap/` |
-| `/anno-1924` | `pages/bokuglen/index.md` |
-| `/anno-1924/:slug` | `pages/bokuglen/{slug}.md` |
-| `/grisefestene` | `pages/grisefestene/index.md` |
-| `/grisefestene/:slug` | `pages/grisefestene/{slug}.md` |
-| `/about` | `pages/about.md` |
-| `/chateau-neuf` | `pages/chateau-neuf.md` |
+| URL                              | Source file                                               |
+| -------------------------------- | --------------------------------------------------------- |
+| `/`                              | `posts/nyheter/` index (full content, paginated)          |
+| `/nyheter/:slug`                 | `posts/nyheter/YYYY-MM-DD-{slug}.md`                      |
+| `/historierogmyter`              | `posts/historierogmyter/` index (full content, paginated) |
+| `/historierogmyter/:slug`        | `posts/historierogmyter/YYYY-MM-DD-{slug}.md`             |
+| `/den-gyldne-gris-orden`         | `pages/den-gyldne-gris-orden/index.md`                    |
+| `/den-gyldne-gris-orden/:slug`   | `pages/den-gyldne-gris-orden/{slug}.md`                   |
+| `/den-hviide-knap`               | `posts/den-hviide-knap/` index (full content, paginated)  |
+| `/den-hviide-knap/nyheter/:slug` | `posts/den-hviide-knap/YYYY-MM-DD-{slug}.md`              |
+| `/den-hviide-knap/:slug`         | `pages/den-hviide-knap/{slug}.md`                         |
+| `/bokuglen`                      | `pages/bokuglen/index.md`                                 |
+| `/bokuglen/:slug`                | `pages/bokuglen/{slug}.md`                                |
+| `/grisefestene`                  | `pages/grisefestene/index.md`                             |
+| `/grisefestene/:slug`            | `pages/grisefestene/{slug}.md`                            |
+| `/about`                         | `pages/about.md`                                          |
+| `/chateau-neuf`                  | `pages/chateau-neuf.md`                                   |
 
 Old Squarespace flat URLs are redirected in `next.config.ts` (`redirects()`).
 
@@ -215,13 +220,13 @@ Nav: CSS-only hover dropdowns matching live site structure.
 
 ## Dependencies added
 
-| Package | Purpose |
-|---------|---------|
-| `fast-xml-parser` | XML parsing with CDATA and namespace support |
-| `turndown` | HTML → Markdown conversion |
-| `gray-matter` | Frontmatter parsing at build time |
-| `remark` + `remark-html` | Markdown → HTML |
-| `sass` | SCSS compilation |
+| Package                  | Purpose                                      |
+| ------------------------ | -------------------------------------------- |
+| `fast-xml-parser`        | XML parsing with CDATA and namespace support |
+| `turndown`               | HTML → Markdown conversion                   |
+| `gray-matter`            | Frontmatter parsing at build time            |
+| `remark` + `remark-html` | Markdown → HTML                              |
+| `sass`                   | SCSS compilation                             |
 
 ---
 
