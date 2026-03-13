@@ -10,10 +10,10 @@ postName: matrikkel
 
 ![](/images/13642_336808830075_708605075_10043411_591642_n.jpg)
 
-Å motta Hans Majestet den Gyldne Gris´ Orden er den høyeste utmerkelse. Det er kun de som i sitt virke i  Det Norske Studentersamfund, og for Studentersamfundet videre, utfører en utmerket ekstra innsats, som gjør seg fortjent til denne Ordenen.
+Å motta Hans Majestet den Gyldne Gris´ Orden er den høyeste utmerkelse. Det er kun de som i sitt virke i Det Norske Studentersamfund, og for Studentersamfundet videre, utfører en utmerket ekstra innsats, som gjør seg fortjent til denne Ordenen.
 
 Listen som følger er over alle de som gjennom over 150 år har gjort seg fortjent til å bære Hans Majestets høysete utmerkelser.
 
-### MATRIKKEL   
+## Matrikkel
 
-[Hovedmatrikkel Den Gyldne Gris](/s/DGG-Matrikkel-1859-2021.docx)
+[Hovedmatrikkel Den Gyldne Gris](/files/DGG-Matrikkel-1859-2021.docx)
