@@ -4,7 +4,7 @@ date: Mon, 04 Ma
 status: publish
 type: page
 oldPermalink: /studentteateret-175-r
-postName: studentteateret-175-r
+postName: studentteateret-175-aar
 section: den-hviide-knap
 ---
 

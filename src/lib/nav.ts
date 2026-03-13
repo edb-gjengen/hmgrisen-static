@@ -14,26 +14,26 @@ export const DGG_LINKS: NavLink[] = [
 
 export const DHK_LINKS: NavLink[] = [
   { label: 'Knappenytt', href: '/den-hviide-knap' },
-  { label: 'Historie', href: '/den-hviide-knap/dhkhistorie' },
-  { label: 'Presensliste', href: '/den-hviide-knap/dhkpresensliste' },
-  { label: 'Matrikkel', href: '/den-hviide-knap/dhkmatrikkel' },
-  { label: 'Statutter', href: '/den-hviide-knap/dhkstatutter' },
-  { label: 'Studentteateret 175 år', href: '/den-hviide-knap/studentteateret-175-r' },
+  { label: 'Historie', href: '/den-hviide-knap/historie' },
+  { label: 'Presensliste', href: '/den-hviide-knap/presensliste' },
+  { label: 'Matrikkel', href: '/den-hviide-knap/matrikkel' },
+  { label: 'Statutter', href: '/den-hviide-knap/statutter' },
+  { label: 'Studentteateret 175 år', href: '/den-hviide-knap/studentteateret-175-aar' },
 ];
 
 export const GRISEFESTENE_LINKS: NavLink[] = [
   { label: 'Grisefestene', href: '/grisefestene' },
-  { label: 'Grisefest 2004', href: '/grisefestene/grisefest2004' },
-  { label: 'Grisefest 2009', href: '/grisefestene/grisefest-2009' },
-  { label: 'Grisefesten 2013', href: '/grisefestene/grisefesten-2013' },
+  { label: 'Grisefest 2004', href: '/grisefestene/2004' },
+  { label: 'Grisefest 2009', href: '/grisefestene/2009' },
+  { label: 'Grisefest 2013', href: '/grisefestene/2013' },
 ];
 
 export const BOKUGLEN_LINKS: NavLink[] = [
   { label: 'Bokuglen', href: '/bokuglen' },
-  { label: 'Bokuglens historie', href: '/bokuglen/bokuglens-historie' },
-  { label: 'Presensliste', href: '/bokuglen/bupresensliste' },
-  { label: 'Matrikkel', href: '/bokuglen/bumatrikkel' },
-  { label: 'Statutter', href: '/bokuglen/bustatutter' },
+  { label: 'Bokuglens historie', href: '/bokuglen/historie' },
+  { label: 'Presensliste', href: '/bokuglen/presensliste' },
+  { label: 'Matrikkel', href: '/bokuglen/matrikkel' },
+  { label: 'Statutter', href: '/bokuglen/statutter' },
 ];
 
 export const NAV: NavItem[] = [
