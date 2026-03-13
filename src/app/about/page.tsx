@@ -2,7 +2,7 @@ import { notFound } from 'next/navigation';
 import PageLayout from '@/components/PageLayout';
 import { getRootPage } from '@/lib/content';
 
-export const metadata = { title: 'Om' };
+export const metadata = { title: 'Om Hans Majestet den Gyldne Gris' };
 
 export default async function AboutPage() {
   const page = await getRootPage('about');

@@ -1,5 +1,5 @@
 ---
-title: Anno 1859
+title: Den Gyldne Gris' Orden – Anno 1859
 date: Fri, 01 Ma
 status: publish
 type: page

@@ -33,7 +33,7 @@ const nextConfig: NextConfig = {
       // Squarespace used /section/YYYY/M/D/slug — redirect to flat /section/slug
       { source: '/nyheter/:year/:month/:day/:slug', destination: '/nyheter/:slug', permanent: true },
       { source: '/historierogmyter/:year/:month/:day/:slug', destination: '/historierogmyter/:slug', permanent: true },
-      { source: '/anno-1899/:year/:month/:day/:slug', destination: '/den-hviide-knap/:slug', permanent: true },
+      { source: '/anno-1899/:year/:month/:day/:slug', destination: '/den-hviide-knap/nyheter/:slug', permanent: true },
     ];
   },
 };

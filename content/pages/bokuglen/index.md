@@ -1,5 +1,5 @@
 ---
-title: Anno 1924
+title: Bokuglen – Anno 1924
 date: Mon, 04 Ma
 status: publish
 type: page

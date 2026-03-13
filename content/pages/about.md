@@ -1,13 +1,11 @@
 ---
-title: Om
+title: Om Hans Majestet den Gyldne Gris
 date: Fri, 24 Ja
 status: publish
 type: page
 oldPermalink: /about
 postName: about
 ---
-
-# Hans Majestet den Gyldne Gris
 
 ![](/images/14764_366412090564_785760564_10454493_4835923_n_d4f371.jpg)
 
@@ -37,6 +35,6 @@ Man har siden den gang mer eller mindre vellykket avholdt Grisefest til ære for
 
 Grisefesten innledes med en seremoni hvor medlemmer av Studentersamfundet som har utmerket seg spesielt, kan bli beæret av Hans Majestet Grisen og slått til ridder av ordenen Den Gyldne Gris. Innehavere av Ordenen kan stige i gradene ved fortsatt iherdig innsats for Det Norske Studentersamfund eller samfunnet for øvrig, etter deres aktive periode i Studentersamfundet er over. Ridderskapet vil alltid stå til disposisjon for tidens aktive studenter når historisk kunnskap og akademisk profesjon trengs.
 
-Tiden går fortere og tallet syv er vel strengt tatt ikke like hellig i det 21. århundre. Grisefesten avholdes nå hvert 4. år.  
+Tiden går fortere og tallet syv er vel strengt tatt ikke like hellig i det 21. århundre. Grisefesten avholdes nå hvert 4. år.
 
 ​
