@@ -394,7 +394,7 @@ hr {
   margin: 0;
   padding: 0;
 
-  li {
+  > li {
     border-bottom: 1px solid $color-border;
     padding: 1.5rem 0;
 
