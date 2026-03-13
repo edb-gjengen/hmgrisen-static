@@ -1,7 +1,7 @@
 ---
 title: Markus Keller utnevnt til Ridder av Bokuglen
 date: 2019-05-27
-author: Kyrre Alvaer
+author: Kyrre Alvær
 status: publish
 type: post
 section: nyheter

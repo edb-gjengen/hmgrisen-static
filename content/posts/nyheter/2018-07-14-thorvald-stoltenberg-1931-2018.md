@@ -1,7 +1,7 @@
 ---
 title: Thorvald Stoltenberg (1931-2018)
 date: 2018-07-14
-author: Kyrre Alvaer
+author: Kyrre Alvær
 status: publish
 type: post
 section: nyheter

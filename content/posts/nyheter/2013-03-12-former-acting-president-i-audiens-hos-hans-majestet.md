@@ -1,7 +1,7 @@
 ---
 title: '"Former acting President" i audiens hos Hans Majestet'
 date: 2013-03-12
-author: Kyrre Alvaer
+author: Kyrre Alvær
 status: publish
 type: post
 section: nyheter

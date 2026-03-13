@@ -1,7 +1,7 @@
 ---
 title: Ny Stormester og Formand i jubileumsåret 2013
 date: 2013-01-01
-author: Kyrre Alvaer
+author: Kyrre Alvær
 status: publish
 type: post
 section: nyheter

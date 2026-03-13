@@ -1,7 +1,7 @@
 ---
 title: Suhas Govind Joshi tildelt Studentparlamentets Undervisningspris og ridder av Bokuglen
 date: 2016-05-13
-author: Kyrre Alvaer
+author: Kyrre Alvær
 status: publish
 type: post
 section: nyheter

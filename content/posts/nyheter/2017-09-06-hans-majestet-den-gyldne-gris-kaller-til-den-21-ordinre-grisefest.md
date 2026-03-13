@@ -1,7 +1,7 @@
 ---
 title: Hans Majestet den Gyldne Gris kaller til den 21. ordinære grisefest
 date: 2017-09-06
-author: Kyrre Alvaer
+author: Kyrre Alvær
 status: publish
 type: post
 section: nyheter

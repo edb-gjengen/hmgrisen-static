@@ -1,7 +1,7 @@
 ---
 title: Pål Bang-Hansen hedret med Storkors
 date: 2010-03-05
-author: Kyrre Alvaer
+author: Kyrre Alvær
 status: publish
 type: post
 section: den-hviide-knap

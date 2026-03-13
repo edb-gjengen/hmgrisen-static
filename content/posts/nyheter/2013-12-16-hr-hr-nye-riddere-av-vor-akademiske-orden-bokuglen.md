@@ -1,7 +1,7 @@
 ---
 title: Hør! Hør! Nye riddere av Vor Akademiske Orden Bokuglen
 date: 2013-12-16
-author: Kyrre Alvaer
+author: Kyrre Alvær
 status: publish
 type: post
 section: nyheter

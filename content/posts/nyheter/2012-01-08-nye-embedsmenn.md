@@ -1,7 +1,7 @@
 ---
 title: Nye Embedsmenn
 date: 2012-01-08
-author: Kyrre Alvaer
+author: Kyrre Alvær
 status: publish
 type: post
 section: nyheter

@@ -1,7 +1,7 @@
 ---
 title: Storkors & Herold Lars Jacob Krogh (1938-2010)
 date: 2010-04-14
-author: Kyrre Alvaer
+author: Kyrre Alvær
 status: publish
 type: post
 section: nyheter

@@ -1,7 +1,7 @@
 ---
 title: Peter Sigurdson Lunga slått til ridder
 date: 2013-03-02
-author: Kyrre Alvaer
+author: Kyrre Alvær
 status: publish
 type: post
 section: den-hviide-knap

@@ -1,7 +1,7 @@
 ---
 title: Storkors og Skattmester  Ingjald Ørbeck Sørheim (1937 - 2010)
 date: 2010-09-18
-author: Kyrre Alvaer
+author: Kyrre Alvær
 status: publish
 type: post
 section: nyheter

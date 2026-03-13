@@ -1,7 +1,7 @@
 ---
 title: Den 20. ordinære Grisefest 5. oktober 2013
 date: 2013-02-26
-author: Kyrre Alvaer
+author: Kyrre Alvær
 status: publish
 type: post
 section: nyheter

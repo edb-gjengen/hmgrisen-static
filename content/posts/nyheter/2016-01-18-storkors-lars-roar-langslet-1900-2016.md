@@ -1,7 +1,7 @@
 ---
 title: Storkors Lars Roar Langslet (1936 - 2016)
 date: 2016-01-18
-author: Kyrre Alvaer
+author: Kyrre Alvær
 status: publish
 type: post
 section: nyheter

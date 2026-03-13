@@ -1,7 +1,7 @@
 ---
 title: Utdeling av riddere til Bokuglen
 date: 2013-12-16
-author: Kyrre Alvaer
+author: Kyrre Alvær
 status: publish
 type: post
 section: nyheter

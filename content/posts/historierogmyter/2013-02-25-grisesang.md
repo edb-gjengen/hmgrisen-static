@@ -1,7 +1,7 @@
 ---
 title: God save the Gris
 date: 2013-02-25
-author: Kyrre Alvaer
+author: Kyrre Alvær
 status: publish
 type: post
 section: historierogmyter

@@ -1,7 +1,7 @@
 ---
 title: Hans Majestet Grisen overvar 200-års jubileums Kick-off
 date: 2013-02-09
-author: Kyrre Alvaer
+author: Kyrre Alvær
 status: publish
 type: post
 section: nyheter

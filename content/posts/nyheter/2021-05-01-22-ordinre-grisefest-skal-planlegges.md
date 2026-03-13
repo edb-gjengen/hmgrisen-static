@@ -1,7 +1,7 @@
 ---
 title: 23. ordinære grisefest skal planlegges
 date: 2021-05-01
-author: Kyrre Alvaer
+author: Kyrre Alvær
 status: publish
 type: post
 section: nyheter
@@ -31,6 +31,6 @@ Fra Studentersamfundets begynnelse meldte behovet seg for et eget velferdshus og
 
 Chateau Neuf er tilholdssted for Det Norske Studentersamfund på Majorstua like nedenfor universitetet på Blindern i Oslo. Bygningen er tegnet av arkitektkontoret Kjell Lund og Nils Slaatto og var ferdigstilt i 1973. Chateau Neuf ble innviet 3. september 1971 , etter at Studentersamfundet hadde ført en omflakkende tilværelse siden 1918.
 
-  
+
 
 ![Chateau Neuf, studentenes egent hjem, 50 år i 2021](/images/chateau-neuf.jpg)

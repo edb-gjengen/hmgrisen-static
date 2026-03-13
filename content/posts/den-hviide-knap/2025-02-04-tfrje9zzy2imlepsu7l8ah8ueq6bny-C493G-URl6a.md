@@ -1,7 +1,7 @@
 ---
 title: (untitled)
 date: 2025-02-04
-author: Kyrre Alvaer
+author: Kyrre Alvær
 status: draft
 type: post
 section: den-hviide-knap

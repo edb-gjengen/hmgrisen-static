@@ -1,7 +1,7 @@
 ---
 title: Storkors Ragnar Heidel (1929 - 2014)
 date: 2014-11-16
-author: Kyrre Alvaer
+author: Kyrre Alvær
 status: publish
 type: post
 section: nyheter

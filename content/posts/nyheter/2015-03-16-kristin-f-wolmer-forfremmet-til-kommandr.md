@@ -1,7 +1,7 @@
 ---
 title: KRISTIN F. WOLMER FORFREMMET TIL KOMMANDØR
 date: 2015-03-16
-author: Kyrre Alvaer
+author: Kyrre Alvær
 status: publish
 type: post
 section: nyheter

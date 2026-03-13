@@ -1,7 +1,7 @@
 ---
 title: Kristin F. Wolmer forfremmet til kommandør
 date: 2015-03-15
-author: Kyrre Alvaer
+author: Kyrre Alvær
 status: publish
 type: post
 section: den-hviide-knap

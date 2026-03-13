@@ -1,7 +1,7 @@
 ---
 title: Storkors Francis Sejersted ( 1936 - 2015)
 date: 2015-08-25
-author: Kyrre Alvaer
+author: Kyrre Alvær
 status: publish
 type: post
 section: nyheter

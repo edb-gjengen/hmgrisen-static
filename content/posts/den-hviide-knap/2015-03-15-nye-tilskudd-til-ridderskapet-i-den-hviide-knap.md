@@ -1,7 +1,7 @@
 ---
 title: Nye tilskudd til Den Hviide Knap
 date: 2015-03-15
-author: Kyrre Alvaer
+author: Kyrre Alvær
 status: publish
 type: post
 section: den-hviide-knap
