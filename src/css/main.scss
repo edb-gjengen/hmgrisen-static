@@ -12,7 +12,7 @@ $font-serif:
   var(--font-garamond, "Cormorant Garamond"), Georgia, "Times New Roman", serif;
 $font-sc: var(--font-sc, "Cormorant SC"), "Cormorant Garamond", Georgia, serif;
 
-$body-size: 14px;
+$body-size: 18px;
 $line-height: 1.65;
 $content-width: 900px;
 
@@ -154,8 +154,8 @@ hr {
 // ── Main navigation ───────────────────────────────────────────────────────────
 
 .main-nav {
-  border-top: 1px solid $color-border;
-  border-bottom: 1px solid $color-border;
+  display: flex;
+  justify-content: center;
 }
 
 .main-nav__list {
@@ -163,8 +163,9 @@ hr {
   margin: 0;
   padding: 0;
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
+  border-top: 1px solid $color-border;
+  border-bottom: 1px solid $color-border;
 }
 
 .main-nav__item {
@@ -313,8 +314,12 @@ hr {
       background: rgba(0, 0, 0, 0.75);
     }
 
-    &--prev { left: 0; }
-    &--next { right: 0; }
+    &--prev {
+      left: 0;
+    }
+    &--next {
+      right: 0;
+    }
   }
 }
 

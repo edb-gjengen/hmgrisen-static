@@ -1,32 +1,32 @@
-import type { Metadata } from 'next';
-import { Cormorant_Garamond, Cormorant_SC } from 'next/font/google';
-import Image from 'next/image';
-import Nav from '@/components/Nav';
-import SlideshowInit from '@/components/SlideshowInit';
-import '@/css/main.scss';
+import type { Metadata } from "next";
+import { Cormorant_Garamond, Cormorant_SC } from "next/font/google";
+import Image from "next/image";
+import Nav from "@/components/Nav";
+import SlideshowInit from "@/components/SlideshowInit";
+import "@/css/main.scss";
 
 const garamond = Cormorant_Garamond({
-  subsets: ['latin'],
-  weight: ['300', '400', '600', '700'],
-  style: ['normal', 'italic'],
-  variable: '--font-garamond',
-  display: 'swap',
+  subsets: ["latin"],
+  weight: ["300", "400", "600", "700"],
+  style: ["normal", "italic"],
+  variable: "--font-garamond",
+  display: "swap",
 });
 
 const cormorantSC = Cormorant_SC({
-  subsets: ['latin'],
-  weight: ['300', '400', '700'],
-  variable: '--font-sc',
-  display: 'swap',
+  subsets: ["latin"],
+  weight: ["300", "400", "700"],
+  variable: "--font-sc",
+  display: "swap",
 });
 
 export const metadata: Metadata = {
   title: {
-    default: 'Hans Majestet den Gyldne Gris',
-    template: '%s · Hans Majestet den Gyldne Gris',
+    default: "Hans Majestet den Gyldne Gris",
+    template: "%s · Hans Majestet den Gyldne Gris",
   },
   description:
-    'af høi Stegen Magt og Fedme, Hersker over Soon, Swinemünde og Sylt',
+    "af høi Stegen Magt og Fedme, Hersker over Soon, Swinemünde og Sylt, Ribbungers og Galtungers Ætlig, Herre over Grisehusets Ynglige, de dunede og børstede, de Poters og Lenders, Folks Første, Skovens allerstørste",
 };
 
 export default function RootLayout({
