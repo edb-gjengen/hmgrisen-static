@@ -428,3 +428,21 @@ hr {
   color: $color-text;
   margin: 0.4rem 0 0;
 }
+
+.show-more-btn {
+  display: block;
+  margin: 2rem auto 0;
+  padding: 0.5rem 2rem;
+  font-family: $font-sc;
+  font-size: 0.8rem;
+  letter-spacing: 0.1em;
+  color: $color-text;
+  background: none;
+  border: 1px solid $color-border;
+  cursor: pointer;
+
+  &:hover {
+    border-color: $color-link;
+    color: $color-link;
+  }
+}

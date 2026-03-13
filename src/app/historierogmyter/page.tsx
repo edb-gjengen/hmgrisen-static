@@ -1,26 +1,14 @@
-import Link from 'next/link';
-import { getPostsBySection } from '@/lib/content';
+import { getFullPostsBySection } from '@/lib/content';
+import PostListExpanded from '@/components/PostListExpanded';
 
 export const metadata = { title: 'Historier og myter' };
 
-export default function HistorierIndex() {
-  const posts = getPostsBySection('historierogmyter');
+export default async function HistorierIndex() {
+  const posts = await getFullPostsBySection('historierogmyter');
   return (
     <div className="page-content">
       <h1 className="page-content__title">Historier og myter</h1>
-      <ul className="post-list">
-        {posts.map((post) => (
-          <li key={post.slug}>
-            <p className="post-list__title">
-              <Link href={`/historierogmyter/${post.slug}`}>{post.title}</Link>
-            </p>
-            <p className="post-list__meta">
-              {post.date}
-              {post.author && ` · ${post.author}`}
-            </p>
-          </li>
-        ))}
-      </ul>
+      <PostListExpanded posts={posts} hrefPrefix="/historierogmyter" />
     </div>
   );
 }
